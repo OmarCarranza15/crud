@@ -31,10 +31,10 @@ app.use('/proyehasimage',ProyeHasImagenes)
 app.use('/imagenes', Imagenes)
 
 app.use(myconn(mysql,{
-   host:'localhost',
+   host:'incarranza13.mysql.database.azure.com',
    port:3306,
    user:'InCarranza',
-   password:'admin',
+   password:'Sashaloka13',
    database:'db_incarranza'
 }))
 app.use(express.static(path.join(__dirname,'../../bdimages')))
