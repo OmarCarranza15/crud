@@ -19,7 +19,7 @@ export default function Login() {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-  const URI = 'https://backend-two-swart-44.vercel.app/usuarios/';
+  const URI = 'https://backend.vercel.app/usuarios/';
   
 
   const handleEmailChange = (e) => {
