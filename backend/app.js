@@ -19,7 +19,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename)
 
-const PORT = 8000;
+
 const app = express()
 
 app.use(cors())
@@ -49,6 +49,9 @@ try {
 }
 //nodemon app, ahora iniciamos aqui la base de datos
 
-app.listen(PORT, ()=> {
-   console.log('Server UP runnung in http://localhost:'+PORT)
-})
+
+
+app.listen(process.env.PORT || 3000, () => {
+   console.log('Server UP running on port ' + (process.env.PORT || 3000));
+});
+

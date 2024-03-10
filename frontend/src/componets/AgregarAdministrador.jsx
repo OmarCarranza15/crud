@@ -7,7 +7,8 @@ import { useNavigate } from 'react-router-dom';
 import CryptoJS from 'crypto-js';/////////encriptar y desencriptar datos
 import Stop from './Stop.jsx'/////////////modulo de aviso -->Alto
 
-const URI = 'http://'+window.location.hostname+':8000/usuarios/';
+const URI = 'https://crud-backend.vercel.app/usuarios/';
+
 
 const AgregarAdministrador = () => {
 
