@@ -22,10 +22,7 @@ const __dirname = dirname(__filename)
 
 const app = express()
 
-app.use(cors({
-   origin: 'http://localhost:3001', // Permitir solicitudes desde localhost:3001
-   credentials: true // Permitir enviar cookies en solicitudes CORS
- }));
+app.use(cors())
 app.use(express.json())
 app.use('/usuarios', usuarioRoutes)
 app.use('/proyectosrealizados', proyectosRealizados)
@@ -55,6 +52,6 @@ try {
 
 
 app.listen(process.env.PORT || 3000, () => {
-   console.log('Server UP running on port ' + (process.env.PORT || 3000));
+   console.log('Server UP running on port ' + (process.env.PORT || 3000 ));
 });
 
