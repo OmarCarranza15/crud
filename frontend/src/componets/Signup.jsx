@@ -5,7 +5,7 @@ import Container from "react-bootstrap/esm/Container";
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 
-const URI = 'https://crud-backend.vercel.app/usuarios/';
+const URI = 'https://backend-silk-eight.vercel.app/usuarios/';
 
 const CompRegistro = () => {
     const navigate = useNavigate();

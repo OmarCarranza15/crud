@@ -9,7 +9,7 @@ import IMG1 from '../imgs/ServicioRemodelacion.jpg';
 import IMG2 from '../imgs/ServicioDicenoPlanos.jpg';*/
 import IMGPrueba from '../imgs/Imagen-no-disponible-282x300.png'
 
-const URIServicios = 'http://' + window.location.hostname + ':8000/ServiciosOfrecidos/';
+const URIServicios = 'https://backend-silk-eight.vercel.app/ServiciosOfrecidos/';
 
 function Servicios() {
   const [servicios, setServicios] = useState([]);

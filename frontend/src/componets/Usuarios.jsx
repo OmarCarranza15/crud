@@ -21,7 +21,7 @@ function Usuarios() {
   const [searchTerm, setSearchTerm] = useState('');
 
   // Extraído la URL de la API a una constante para evitar la repetición
-  const API_URL = `http://${window.location.hostname}:8000/usuarios/`;
+  const API_URL = `https://backend-silk-eight.vercel.app/usuarios/`;
 
   useEffect(() => {
     fetch(API_URL)

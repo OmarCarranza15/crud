@@ -19,7 +19,7 @@ export default function Login() {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-  const URI = 'http://' + window.location.hostname + ':8000/usuarios/';
+  const URI = 'https://backend-silk-eight.vercel.app/usuarios/';
   
 
   const handleEmailChange = (e) => {
