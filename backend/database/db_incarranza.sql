@@ -155,3 +155,4 @@ insert into imagenes (nombre,descricion,tipo,archivo) VALUES
 -- * El rol nos sirve para identificar si es admin o cliente, para esto usaremos lo siguente 1 = admin y 2 = cliente*/
 -- Admin ya que su rol es 1
 -- Cliente ya que su rol es 2
+
