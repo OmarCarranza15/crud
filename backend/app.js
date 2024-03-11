@@ -20,11 +20,7 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-app.use(cors({
-  origin: 'http://localhost:3000', // Reemplaza con el URL de tu frontend local
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
-}));
-
+app.use(cors());
 app.use(express.json());
 app.use('/usuarios', usuarioRoutes);
 app.use('/proyectosrealizados', proyectosRealizados);
