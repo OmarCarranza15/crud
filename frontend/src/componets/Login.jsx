@@ -19,7 +19,11 @@ export default function Login() {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
-  const URI = 'https://backend.vercel.app/usuarios/';
+
+  const backendUrl = 'https://backend-8mbxh85up-omar-carranzas-projects.vercel.app';
+  const URI = `${backendUrl}/usuarios/`;
+
+  
   
 
   const handleEmailChange = (e) => {

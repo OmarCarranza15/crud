@@ -7,9 +7,11 @@ import {Carousel, Button, Spinner, Modal } from 'react-bootstrap';
 import IMGPrueba from '../imgs/Imagen-no-disponible-282x300.png'
 
 //urls para el pedido al servidor
-const URIServicios = 'http://'+window.location.hostname+':8000/ServiciosOfrecidos/';
-const URIProyectos = 'http://'+window.location.hostname+':8000/proyectosrealizados/';
-const URIPRXIMG    = 'http://'+window.location.hostname+':8000/proyehasimage/';
+const backendUrl = 'https://backend-8mbxh85up-omar-carranzas-projects.vercel.app';
+const URIServicios = `${backendUrl}/ServiciosOfrecidos/`;
+const URIProyectos = `${backendUrl}/proyectosrealizados/`;
+const URIPRXIMG    = `${backendUrl}/proyehasimage/`;
+
 
 //funcion principal
 export default function Projects(params) {

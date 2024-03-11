@@ -5,7 +5,9 @@ import Container from "react-bootstrap/esm/Container";
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 
-const URI = 'https://backend.vercel.app/usuarios/';
+const backendUrl = 'https://backend-8mbxh85up-omar-carranzas-projects.vercel.app';
+const URI = `${backendUrl}/usuarios/`;
+
 
 const CompRegistro = () => {
     const navigate = useNavigate();
