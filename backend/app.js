@@ -23,9 +23,10 @@ const __dirname = dirname(__filename)
 const app = express()
 
 app.use(cors({
-   origin: 'https://frontend.vercel.app', // Reemplaza con el dominio de tu frontend en Vercel
-   credentials: true // Si se necesitan cookies en las solicitudes CORS
-}));
+   origin: 'http://localhost:3000', // Reemplaza con el URL de tu frontend local
+   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos HTTP permitidos
+ }));
+ 
 app.use(express.json())
 app.use('/usuarios', usuarioRoutes)
 app.use('/proyectosrealizados', proyectosRealizados)
